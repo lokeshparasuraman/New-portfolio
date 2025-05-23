@@ -2,7 +2,9 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
+const basePath = process.env.NODE_ENV === 'production' ? '/New-portfolio' : '';
 const Hero = () => {
   const titles = ["Web Developer", "React Enthusiast", "MERN Stack Learner"];
   const [currentTitle, setCurrentTitle] = useState(0);
@@ -64,7 +66,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src="/lokesh.jpg"
+                src={`${basePath}/lokesh.jpg`}
                 alt="Lokesh's Profile"
                 fill
                 className="object-cover"

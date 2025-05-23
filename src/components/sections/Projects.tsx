@@ -2,33 +2,35 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+const basePath = process.env.NODE_ENV === 'production' ? '/New-portfolio' : '';
+
 const projects = [
   {
     title: 'E-Commerce',
     description: 'A modern portfolio website built with React and Tailwind CSS, featuring a responsive design for shopping.',
     tech: ['React', 'Tailwind CSS', 'JavaScript'],
-    image: '/nxttrends.png',
+    image: `${basePath}/nxttrends.png`,
     link: 'https://nxtapp45.ccbp.tech'
   },
   {
     title: 'Chain Of Custody',
     description: 'A web application to Manage the evidence of law and authority using blockChain for avoiding tampering of the evidences.',
     tech: ['React', 'Node.js', 'MongoDB', 'HTML', 'CSS', 'Python'],
-    image: '/Chain-of-custody.jpg',
+    image: `${basePath}/Chain-of-custody.jpg`,
     link: 'https://github.com/lokeshparasuraman/CHAIN-OF-CUSTODY'
   },
   {
     title: 'Weather App',
     description: 'A weather application that provides real-time weather information for any location.',
     tech: ['React', 'Weather API', 'CSS'],
-    image: '/weather.png',
+    image: `${basePath}/weather.png`,
     link: 'https://main--weather-app-react-kannan.netlify.app/'
   },
   {
     title: 'Food Munch',
     description: 'A full-stack task management application with user authentication and CRUD operations.',
     tech: ['React', 'Express.js', 'MongoDB'],
-    image: '/foodmunch.png',
+    image: `${basePath}/foodmunch.png`,
     link: 'https://kannanfoodmunch.ccbp.tech/'
   }
 ];
