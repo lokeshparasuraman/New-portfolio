@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/router';
+
 
 const basePath = process.env.NODE_ENV === 'production' ? '/New-portfolio' : '';
 const Hero = () => {
