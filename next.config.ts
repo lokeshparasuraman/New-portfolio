@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/New-portfolio',
+  // Only use basePath in production
+  basePath: process.env.NODE_ENV === 'production' ? '/New-portfolio' : '',
 };
 
 export default nextConfig;

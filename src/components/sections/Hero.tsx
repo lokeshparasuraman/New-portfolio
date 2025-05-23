@@ -12,7 +12,7 @@ const Hero = () => {
       setCurrentTitle((prev) => (prev + 1) % titles.length);
     }, 3000);
     return () => clearInterval(interval);
-  },[]);
+  }, [titles.length]);
 
   return (
     <section id='home' className="min-h-screen flex items-center pt-16 bg-black text-white">
