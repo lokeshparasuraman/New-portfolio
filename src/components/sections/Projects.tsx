@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Todo Summarizer',
     description: 'Full stack application that summarizes and categorizes tasks using OpenAI API and Slack API.',
-    tech: ['React', 'Node js', 'OpenAI API', 'Slack API'],
+    tech: ['React', 'Node js','MongoDB','OpenAI API', 'Slack API'],
     image: `${basePath}/Todo-Summarizer.png`,
     link: 'https://github.com/lokeshparasuraman/todo-summarize'
   },
