@@ -27,6 +27,13 @@ const projects = [
     link: 'https://main--weather-app-react-kannan.netlify.app/'
   },
   {
+    title: 'Todo Summarizer',
+    description: 'Full stack application that summarizes and categorizes tasks using OpenAI API and Slack API.',
+    tech: ['React', 'Node js', 'OpenAI API', 'Slack API'],
+    image: `${basePath}/Todo-Summarizer.png`,
+    link: 'https://github.com/lokeshparasuraman/todo-summarize'
+  },
+  {
     title: 'Food Munch',
     description: 'A full-stack task management application with user authentication and CRUD operations.',
     tech: ['React', 'Express.js', 'MongoDB'],
