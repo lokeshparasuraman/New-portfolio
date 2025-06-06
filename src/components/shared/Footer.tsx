@@ -8,7 +8,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'GitHub', url: 'https://github.com/lokeshparasuraman', icon: FaGithub },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/lokesh-parasuraman-02a88a22a', icon: FaLinkedin },
-    { name: 'Instagram', url: 'https://www.instagram.com/iamloki_1', icon: FaInstagram },
+    { name: 'Instagram', url: 'https://www.instagram.com/iamloki_14', icon: FaInstagram },
     { name: 'Mail', url: 'mailto:lokeshofficial0114@gmail.com', icon: FaEnvelope }, 
   ];
 
