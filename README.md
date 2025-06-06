@@ -2,7 +2,7 @@ Modern Portfolio Website
 
 A modern, responsive portfolio website built with Next.js 14, React, TypeScript, and Tailwind CSS.
 
-Deployment
+🌐Deployment
 
 Access My Portfolio here :[Lokesh's Portfolio](https://lokeshparasuraman.github.io/New-portfolio)
 
