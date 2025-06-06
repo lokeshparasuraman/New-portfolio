@@ -16,24 +16,6 @@ Features
 - 🔍 SEO Optimized
 - 🌟 Interactive Animations
 
-Tech Stack
-
-- Next.js 14
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Shadcn UI
-
-Project Sections
-
-- Hero Section with Dynamic Animations
-- About Me with Professional Background
-- Featured Projects Showcase
-- Skills & Technologies
-- Testimonials
-- Contact Form
-
 Getting Started
 
 1. Clone the repository
