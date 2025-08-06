@@ -47,16 +47,17 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              I am a passionate Software developer specializing in building responsive and interactive web applications using <span className="text-purple-400 font-semibold">React</span>, <span className="text-purple-400 font-semibold">Tailwind CSS</span>, <span className="text-purple-400 font-semibold">Express.js</span>, and <span className="text-purple-400 font-semibold">MongoDB</span>.
+              I am a passionate web developer specializing in building responsive and interactive web applications using <span className="text-purple-400 font-semibold">React</span>, <span className="text-purple-400 font-semibold">Tailwind CSS</span>, <span className="text-purple-400 font-semibold">Express.js</span>, and <span className="text-purple-400 font-semibold">MongoDB</span>.
             </motion.p>
             
+            {/* Social Media Links */}
             <motion.div
               className="flex space-x-6 mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-             
+              
             </motion.div>
           </motion.div>
 
@@ -66,7 +67,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="absolute inset-0 bg-purple-500/20 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-300"></div>
+             <div className="absolute inset-0 bg-purple-500/20 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-300"></div>
             <div className="relative w-full max-w-md mx-auto group">
               <div className="relative w-[400px] h-[400px] mx-auto hover:scale-105 transition-all duration-300 cursor-pointer">
               
