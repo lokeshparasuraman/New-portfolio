@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-
 const basePath = process.env.NODE_ENV === 'production' ? '/New-portfolio' : '';
 const Hero = () => {
   const titles = ["Web Developer", "React Enthusiast", "MERN Stack Learner"];
@@ -48,9 +47,17 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              I am a passionate web developer specializing in building responsive and interactive web applications using <span className="text-purple-400 font-semibold">React</span>, <span className="text-purple-400 font-semibold">Tailwind CSS</span>, <span className="text-purple-400 font-semibold">Express.js</span>, and <span className="text-purple-400 font-semibold">MongoDB</span>.
+              I am a passionate Software developer specializing in building responsive and interactive web applications using <span className="text-purple-400 font-semibold">React</span>, <span className="text-purple-400 font-semibold">Tailwind CSS</span>, <span className="text-purple-400 font-semibold">Express.js</span>, and <span className="text-purple-400 font-semibold">MongoDB</span>.
             </motion.p>
             
+            <motion.div
+              className="flex space-x-6 mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+             
+            </motion.div>
           </motion.div>
 
           <motion.div 
@@ -60,19 +67,22 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="absolute inset-0 bg-purple-500/20 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-300"></div>
-            <motion.div 
-              className="relative h-full w-full rounded-full overflow-hidden ring-4 ring-purple-500/30 shadow-2xl"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Image
-                src={`${basePath}/lokesh.jpg`}
-                alt="Lokesh's Profile"
-                fill
-                className="object-cover"
-                priority
-              />
-            </motion.div>
+            <div className="relative w-full max-w-md mx-auto group">
+              <div className="relative w-[400px] h-[400px] mx-auto hover:scale-105 transition-all duration-300 cursor-pointer">
+              
+                <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-600 opacity-40 blur-2xl group-hover:opacity-60 group-hover:blur-xl hover:opacity-80 transition-all duration-500 rounded-full"></div>
+                
+                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-gradient-to-r from-purple-400 via-pink-300 to-blue-400 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300">
+                  <Image
+                    src={`${basePath}/lokesh.jpg`}
+                    alt="Lokesh"
+                    fill
+                    priority
+                    className="object-cover transition-transform duration-500 hover:scale-110 hover:rotate-3" 
+                  />
+                </div>
+              </div>
+            </div>
           </motion.div>
 
         </div>
