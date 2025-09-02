@@ -9,7 +9,7 @@ const Footer = () => {
     { name: 'GitHub', url: 'https://github.com/lokeshparasuraman', icon: FaGithub },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/lokesh-parasuraman-02a88a22a', icon: FaLinkedin },
     { name: 'Instagram', url: 'https://www.instagram.com/iamloki_14', icon: FaInstagram },
-    { name: 'LeetCode', url: 'https://leetcode.com/u/lokeshparasu', icon: () => (
+    { name: 'LeetCode', url: 'https://leetcode.com/u/lokeshparasuraman', icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
