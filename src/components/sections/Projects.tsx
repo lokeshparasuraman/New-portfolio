@@ -6,12 +6,13 @@ const basePath = process.env.NODE_ENV === 'production' ? '/New-portfolio' : '';
 
 const projects = [
   {
-    title: 'E-Commerce',
-    description: 'A modern portfolio website built with React and Tailwind CSS, featuring a responsive design for shopping.',
-    tech: ['React', 'Tailwind CSS', 'JavaScript'],
-    image: `${basePath}/nxttrends.png`,
-    link: 'https://nxtapp45.ccbp.tech'
+    title: 'Flight booking',
+    description: 'An AI-powered flight booking platform that helps users search, compare, and book flights instantly with a seamless and modern UI.',
+    tech: ['React', 'Tailwind CSS', 'TypeScript','Express','Postgre sql'],
+    image: `${basePath}/flyfast.png`,
+    link: 'https://flight-bookings.vercel.app/'
   },
+  
   {
     title: 'Chain Of Custody',
     description: 'A web application to Manage the evidence of law and authority using blockChain for avoiding tampering of the evidences.',
@@ -32,13 +33,6 @@ const projects = [
     tech: ['React', 'Node js','MongoDB','OpenAI API', 'Slack API'],
     image: `${basePath}/Todo-Summarizer.png`,
     link: 'https://github.com/lokeshparasuraman/todo-summarize'
-  },
-  {
-    title: 'Food Munch',
-    description: 'A full-stack task management application with user authentication and CRUD operations.',
-    tech: ['React', 'Express.js', 'MongoDB'],
-    image: `${basePath}/foodmunch.png`,
-    link: 'https://kannanfoodmunch.ccbp.tech/'
   }
 ];
 
@@ -51,8 +45,9 @@ const Projects = () => {
   return (
     <section id="portfolio" className="py-20 bg-black text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center text-[#ccd6f6] hover:text-[#64ffda] transition-colors">Portfolio</h2>
-        <p className="text-center mb-12 text-[#8892b0]">Check out some of my work right here</p>
+        <h2 className="text-3xl font-bold mb-8 text-center text-[#ccd6f6] hover:text-[#64ffda] transition-colors">Projects Worked</h2>
+        <p className="text-center mb-12 text-[#d642cc] font-bold text-xl font-hairline">Check out some of my work here</p>
+
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div

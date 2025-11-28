@@ -29,7 +29,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a192f] text-[#ccd6f6] min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a192f] text-[#ccd6f6] min-h-screen overflow-x-hidden`}
       >
         <div className="relative">
           <div className="fixed inset-0 bg-[#0a192f] z-[-1]">
