@@ -2,8 +2,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+import lokesh from '../../../public/lokesh.jpg';
 const Hero = () => {
 const titles = ["Web Developer", "Software Developer", "MERN Stack Developer"];
 
@@ -73,9 +72,10 @@ const [currentTitle, setCurrentTitle] = useState(0);
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-600 opacity-40 blur-2xl group-hover:opacity-60 group-hover:blur-xl hover:opacity-80 transition-all duration-500 rounded-full"></div> 
                 <div className="relative w-full h-full rounded-full overflow-hidden  border-gradient-to-r from-purple-400 via-pink-300 to-blue-400 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300">
                   <Image
-                    src={`${basePath}/lokesh.jpg`}
+                    src={lokesh}
                     alt="Lokesh"
                     fill
+                    sizes="(max-width: 768px) 100vw, 400px"
                     priority
                     className="object-cover transition-transform duration-500 hover:scale-110 hover:rotate-3" 
                   />
