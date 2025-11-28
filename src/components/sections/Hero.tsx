@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-const basePath = process.env.NODE_ENV === 'production' ? '/New-portfolio' : '';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const Hero = () => {
 const titles = ["Web Developer", "Software Developer", "MERN Stack Developer"];
 
@@ -32,7 +32,7 @@ const [currentTitle, setCurrentTitle] = useState(0);
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-pink-600 hover:to-purple-400 transition-all duration-300">I'm Lokesh</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-pink-600 hover:to-purple-400 transition-all duration-300">I&apos;m Lokesh</span>
             </motion.h1>
             <motion.h2 
               className="text-xl md:text-2xl text-gray-400 font-medium mb-4 italic tracking-wide"
